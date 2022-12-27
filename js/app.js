@@ -16,17 +16,12 @@
 
 // ******************* GLOBALS **************************
 
-  let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+
+// ****************** DOM WINDOW ************************
+let storeSection = document.getElementById('storeSales');
 
 
-  // ************ HELPER FUNCTIONS / UTILITIES ************
-
-  function randomCust(min, max) {
-    //got from MDN docs
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-
-  
 // **************** OBJECT LITERALS *********************
 
 let seattle = {
@@ -35,10 +30,38 @@ let seattle = {
   maxCust: 65,
   avgCookieBought: 6.3,
   cookiesBought: [],
+  total: 0,
+  custPerHr: function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  },
 
-}
+  cookieSales: function() {
+    for(let i = 0; i < hours.length; i++) {
+      let cookiesNeeded = (Math.round(this.custPerHr() * this.avgCookieBought));
+      this.cookiesBought.push(cookiesNeeded);
+      this.total += cookiesNeeded;
+    }
+  },
 
+  render: function() {
+    this.cookieSales();
+    let h2Elem = document.createElement('h2');
+    h2Elem.innerText = this.name;
+    storeSection.appendChild(h2Elem);
+
+    let ulElem = document.createElement('ul');
+    storeSection.appendChild(ulElem);
+
+    for(let i = 0; i < hours.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = `${hours[i]}: ${this.cookiesBought[i]} cookies`;
+      ulElem.appendChild(liElem);
+    }
+    let liTotalElem = document.createElement('li');
+    liTotalElem.textContent = `Total: ${this.total} cookies`;
+    ulElem.appendChild(liTotalElem);
+  },
+};
 
 // **************** EXECUTABLE CODE *********************
-
-
+seattle.render();
