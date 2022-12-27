@@ -1,4 +1,3 @@
-
 'use strict';
 
 
@@ -63,5 +62,165 @@ let seattle = {
   },
 };
 
+let tokyo = {
+  name: 'Tokyo',
+  minCust: 3,
+  maxCust: 24,
+  avgCookieBought: 1.2,
+  cookiesBought: [],
+  total: 0,
+  custPerHr: function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  },
+
+  cookieSales: function() {
+    for(let i = 0; i < hours.length; i++) {
+      let cookiesNeeded = (Math.round(this.custPerHr() * this.avgCookieBought));
+      this.cookiesBought.push(cookiesNeeded);
+      this.total += cookiesNeeded;
+    }
+  },
+
+  render: function() {
+    this.cookieSales();
+    let h2Elem = document.createElement('h2');
+    h2Elem.innerText = this.name;
+    storeSection.appendChild(h2Elem);
+
+    let ulElem = document.createElement('ul');
+    storeSection.appendChild(ulElem);
+
+    for(let i = 0; i < hours.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = `${hours[i]}: ${this.cookiesBought[i]} cookies`;
+      ulElem.appendChild(liElem);
+    }
+    let liTotalElem = document.createElement('li');
+    liTotalElem.textContent = `Total: ${this.total} cookies`;
+    ulElem.appendChild(liTotalElem);
+  },
+};
+
+let dubai = {
+  name: 'Dubai',
+  minCust: 11,
+  maxCust: 38,
+  avgCookieBought: 3.7,
+  cookiesBought: [],
+  total: 0,
+  custPerHr: function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  },
+
+  cookieSales: function() {
+    for(let i = 0; i < hours.length; i++) {
+      let cookiesNeeded = (Math.round(this.custPerHr() * this.avgCookieBought));
+      this.cookiesBought.push(cookiesNeeded);
+      this.total += cookiesNeeded;
+    }
+  },
+
+  render: function() {
+    this.cookieSales();
+    let h2Elem = document.createElement('h2');
+    h2Elem.innerText = this.name;
+    storeSection.appendChild(h2Elem);
+
+    let ulElem = document.createElement('ul');
+    storeSection.appendChild(ulElem);
+
+    for(let i = 0; i < hours.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = `${hours[i]}: ${this.cookiesBought[i]} cookies`;
+      ulElem.appendChild(liElem);
+    }
+    let liTotalElem = document.createElement('li');
+    liTotalElem.textContent = `Total: ${this.total} cookies`;
+    ulElem.appendChild(liTotalElem);
+  },
+};
+
+let paris = {
+  name: 'Paris',
+  minCust: 20,
+  maxCust: 38,
+  avgCookieBought: 2.3,
+  cookiesBought: [],
+  total: 0,
+  custPerHr: function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  },
+
+  cookieSales: function() {
+    for(let i = 0; i < hours.length; i++) {
+      let cookiesNeeded = (Math.round(this.custPerHr() * this.avgCookieBought));
+      this.cookiesBought.push(cookiesNeeded);
+      this.total += cookiesNeeded;
+    }
+  },
+
+  render: function() {
+    this.cookieSales();
+    let h2Elem = document.createElement('h2');
+    h2Elem.innerText = this.name;
+    storeSection.appendChild(h2Elem);
+
+    let ulElem = document.createElement('ul');
+    storeSection.appendChild(ulElem);
+
+    for(let i = 0; i < hours.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = `${hours[i]}: ${this.cookiesBought[i]} cookies`;
+      ulElem.appendChild(liElem);
+    }
+    let liTotalElem = document.createElement('li');
+    liTotalElem.textContent = `Total: ${this.total} cookies`;
+    ulElem.appendChild(liTotalElem);
+  },
+};
+
+let lima = {
+  name: 'Lima',
+  minCust: 2,
+  maxCust: 16,
+  avgCookieBought: 4.6,
+  cookiesBought: [],
+  total: 0,
+  custPerHr: function() {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  },
+
+  cookieSales: function() {
+    for(let i = 0; i < hours.length; i++) {
+      let cookiesNeeded = (Math.round(this.custPerHr() * this.avgCookieBought));
+      this.cookiesBought.push(cookiesNeeded);
+      this.total += cookiesNeeded;
+    }
+  },
+
+  render: function() {
+    this.cookieSales();
+    let h2Elem = document.createElement('h2');
+    h2Elem.innerText = this.name;
+    storeSection.appendChild(h2Elem);
+
+    let ulElem = document.createElement('ul');
+    storeSection.appendChild(ulElem);
+
+    for(let i = 0; i < hours.length; i++) {
+      let liElem = document.createElement('li');
+      liElem.textContent = `${hours[i]}: ${this.cookiesBought[i]} cookies`;
+      ulElem.appendChild(liElem);
+    }
+    let liTotalElem = document.createElement('li');
+    liTotalElem.textContent = `Total: ${this.total} cookies`;
+    ulElem.appendChild(liTotalElem);
+  },
+};
+
 // **************** EXECUTABLE CODE *********************
 seattle.render();
+tokyo.render();
+dubai.render();
+paris.render();
+lima.render();
