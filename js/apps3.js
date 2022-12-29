@@ -19,6 +19,14 @@ function StoreData(name, minCust, maxCust, avgSale) {
   this.total = 0;
 }
 
+let seattle = new StoreData('Seattle', 23, 65, 6.3);
+let tokyo = new StoreData('Tokyo', 3, 24, 1.2);
+let dubai = new StoreData('Dubai', 11, 38, 3.7);
+let paris = new StoreData('Paris', 20, 38, 2.3);
+let lima = new StoreData('Lima', 2, 16, 4.6);
+
+stores.push(seattle, tokyo, dubai, paris, lima);
+
 // ==================== METHODS ===========================
 
 StoreData.prototype.getCustPerHr = function(min, max) {
@@ -34,14 +42,31 @@ StoreData.prototype.cookieSales = function() {
   }
 };
 
-//=================== HEADER RENDER =====================
+StoreData.prototype.render = function () {
+  this.cookieSales();
+  let salesRow = document.createElement('tr');
+  let tableData = document.createElement('td');
+  tableData.textContent = this.name;
+  salesRow.appendChild(tableData);
+
+  for (let i = 0; i < hours.length; i++) {
+    tableData = document.createElement('td');
+    tableData.textContent = this.cookiesBought[i];
+    salesRow.appendChild(tableData);
+  }
+  let total = document.createElement('td');
+  total.textContent = this.total;
+  salesRow.appendChild(total);
+  tableSelector.appendChild(salesRow);
+};
+
+//=================== TABLE HEADER =====================
 
 function renderTH() {
 
   let hoursRow = document.createElement('tr');
   let hourSales = document.createElement('td');
   hoursRow.appendChild(hourSales);
-
 
   for (let i = 0; i < hours.length; i++) {
     let hourly = document.createElement('th');
@@ -55,7 +80,7 @@ function renderTH() {
   tableSelector.appendChild(hoursRow);
 }
 
-//========================= FOOTER ==============================
+//========================= TABLE FOOTER ==============================
 
 function renderTF() {
   let tableFooter = document.getElementById('tableFooter');
@@ -82,34 +107,6 @@ function renderTF() {
   totalRow.appendChild(allSales);
   tableFooter.appendChild(totalRow);
 }
-
-//============================= RENDERS =============================
-
-StoreData.prototype.render = function () {
-  this.cookieSales();
-  let salesRow = document.createElement('tr');
-  let tableData = document.createElement('td');
-  tableData.textContent = this.name;
-  salesRow.appendChild(tableData);
-
-  for (let i = 0; i < hours.length; i++) {
-    tableData = document.createElement('td');
-    tableData.textContent = this.cookiesBought[i];
-    salesRow.appendChild(tableData);
-  }
-  let total = document.createElement('td');
-  total.textContent = this.total;
-  salesRow.appendChild(total);
-
-  tableSelector.appendChild(salesRow);
-};
-
-let seattle = new StoreData('Seattle', 23, 65, 6.3);
-let tokyo = new StoreData('Tokyo', 3, 24, 1.2);
-let dubai = new StoreData('Dubai', 11, 38, 3.7);
-let paris = new StoreData('Paris', 20, 38, 2.3);
-let lima = new StoreData('Lima', 2, 16, 4.6);
-stores.push(seattle, tokyo, dubai, paris, lima);
 
 // ======================== FORM ======================================
 
