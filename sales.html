@@ -6,17 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie">
 
   <title>Cookie Sales</title>
 </head>
 <body>
   <header>
-    <nav><a href="index.html">Cookie Stand</a></nav>
-  </header>
+    <div class="marquee">
+        <div> Pat's Gourmet Salmon Cookies</div>
+        
+        </div>
+ </header>
 
   <main>
-  
+    <nav><a href="index.html">Cookie Stand</a>
+    </nav>
+    
       <h2>Cookie Sales By Location</h2>
 
       <table id="dailySales">
@@ -25,11 +32,33 @@
       
       </table>
       
+      <form id="standForm">
+        <fieldset>
+            <legend>New Cookie Stand:</legend>
+            <label>
+                New Location:
+                <input type="text" name="standLocation" required>
+            </label>
+            <label>
+                Minimum Customers Per Day:
+                    <input type="number" name="standMin" required step="1" min="1">
+                </label>
+                <label>
+                    Maximun Customers Per Day:
+                    <input type="number" name="standMax" required step="1" min="1">
+                </label>
+                <label>
+                    Average Cookies Bought:
+                    <input type="number" name="standAvg" required step="1" min="1">
+                </label>
+                <button type="submit">Add New Stand</button>
+            </fieldset>
+        </form>  
 
   </main>
   <footer>
     
   </footer>
   <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
