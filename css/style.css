@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
+  padding: 3rem;
   background-color: #f198a0;
   background: linear-gradient(45deg, #79d1f7, #107dac, #257ca1, #0077ff, #169bb3, #71c7ec);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,6 +35,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 20px;
+  color: white;
 }
 
 ul {
@@ -45,4 +45,21 @@ ul {
   align-items: center;
   font-size: 2vh;
   line-height: 40px;
+}
+table {
+  font-size: 1.5rem;
+  margin: 2rem;
+  color: white;
+  align-content: center;
+}
+table th {
+  padding:10px;
+  border: solid 3px #fff;
+}
+table tr {
+  border: solid 3px #fff;
+}
+table td {
+  padding: 15px;
+  border: solid 3px #fff;
 }
