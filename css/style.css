@@ -1,4 +1,5 @@
 body {
+  color: white;
   padding: 3rem;
   background-color: #f198a0;
   background: linear-gradient(45deg, #79d1f7, #107dac, #257ca1, #0077ff, #169bb3, #71c7ec);
@@ -39,16 +40,16 @@ h2 {
 }
 
 ul {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2vh;
   line-height: 40px;
 }
+
 table {
-  font-size: 1.5rem;
-  margin: 2rem;
+  font-size: 1rem;
+  margin: auto;
   color: white;
   align-content: center;
 }
