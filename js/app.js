@@ -358,24 +358,10 @@ function renderTF() {
 
 //========================== EXECUTABLES =====================
 
-renderTH();
-
+renderTH(); 
 seattle.render();
 tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
-
-renderTF();
-
-//========================== EXECUTABLES =====================
-
-renderTH();
-
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
-
 renderTF();
