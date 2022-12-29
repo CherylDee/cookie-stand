@@ -22,6 +22,7 @@ let stores = [];
 
 let tableSelector = document.getElementById('dailySales');
 
+
 // ===================== CONSTRUCTOR ====================
 
 function StoreData(name, minCust, maxCust, avgSale) {
@@ -125,30 +126,37 @@ function renderTF() {
 // ======================== FORM ======================================
 
 
-// let standForm = document.getElementById('standForm');
-// standForm.addEventListener('submit', addStand);
+let standForm = document.getElementById('standForm');
+standForm.addEventListener('submit', addStand);
 
-// function addStand(event) {
-//   event.preventDefault();
-//   let form = event.target;
-//   let store = form.standLocation.value;
-//   let minCust = form.standMin.value;
-//   let maxCust = form.standMax.value;
-//   let avgSale = form.standAvg.value;
-//   let store = new StoreData(name, minCust, maxCust, avgSale);
-//   stores.push(location);
-//   location.render();
+function onSubmit() {
+  document.getElementById('standForm').reset();
+}
+function addStand(event) {
+  event.preventDefault();
+  let form = event.target;
+  let stand = form.standLocation.value;
+  let minCust = form.standMin.value;
+  let maxCust = form.standMax.value;
+  let avgSale = form.standAvg.value;
+  let location = new StoreData(stand, minCust, maxCust, avgSale);
+  stores.push(location);
+  location.render();
 
-//   tableFooter.innerHTML = '';
-
-//}
+  // eslint-disable-next-line no-undef
+  tableFooter.textContent = '';
+  renderTF();
+  onSubmit();
+}
 
 //========================== EXECUTABLES =====================
 
-renderTH(); 
+renderTH();
+
 seattle.render();
 tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
+
 renderTF();
