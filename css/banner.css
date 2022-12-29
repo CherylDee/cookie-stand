@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+ }
+ header {
+   color: white;
+   width: 100%;
+   padding: 12px;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(-45deg, #048cfb, #c096a0, #4b93e6, #0c9fda, #5eac98, #71d1e2, #f3c683);
+ }
+ 
+ .marquee {
+   text-transform: capitalize;
+   white-space: nowrap;
+   overflow: hidden;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .marquee div {
+   padding: 20px;
+   font-size: 6rem;
+   font-family:"Cookie", san-serif;
+   font-weight: 400px;
+   animation: animate 10s linear infinite;
+   padding-left: 100%;
+   display: inline-block;
+   text-shadow: 10px 5px 10px #132022;
+ }
+ 
+ @keyframes animate {
+   100% {
+     transform: translate(-100%, 0);
+   }
+ }
+ 
+ 
