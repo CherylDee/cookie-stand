@@ -1,7 +1,7 @@
 body {
   color: white;
   padding: 3rem;
-  background-color: #f198a0;
+  background-color: #e9c3c6;
   background: linear-gradient(45deg, #79d1f7, #107dac, #257ca1, #0077ff, #169bb3, #71c7ec);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -29,6 +29,7 @@ h1 {
   padding: 20px;
   display: flex;
   justify-content: center;
+  font-family: "Andika";
 }
 
 h2 {
@@ -52,15 +53,65 @@ table {
   margin: auto;
   color: white;
   align-content: center;
-}
-table th {
-  padding:10px;
-  border: solid 3px #fff;
+  text-transform: capitalize;
+
 }
 table tr {
   border: solid 3px #fff;
 }
+
+table th {
+  padding:10px;
+  border: solid 3px #fff;
+}
+
 table td {
   padding: 15px;
   border: solid 3px #fff;
+}
+fieldset {
+  font-size: 1.3rem;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 3rem;
+  border: 5px solid #109dc0;
+  border-radius: 10px;
+  box-shadow: -5px 5px 2px 2px rgb(6, 46, 61);
+}
+
+legend {
+  font-size: 1.3rem;
+  padding: 15px;
+  margin-left: 2%;
+  font-weight: bold;
+  border: 4px solid #0abce9;
+  border-radius: 10px;
+  background: #2c69a3;
+}
+
+input {
+  background: rgb(3, 66, 85);
+  padding: 0.5rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+label {
+  margin: 1rem;
+}
+
+button {
+  font-size: 1.1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 6px;
+  background: #2c69a3;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  color:#fff;
+  margin-top: 2rem;
 }
