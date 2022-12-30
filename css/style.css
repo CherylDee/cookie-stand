@@ -87,7 +87,6 @@ legend {
   font-size: 1rem;
   padding: 10px;
   margin-left: 2%;
-  font-weight: bold;
   border: 4px solid #0abce9;
   border-radius: 10px;
   background: #2c69a3;
@@ -115,7 +114,11 @@ button {
 }
 
 footer {
-  margin: 30px;
-  text-align: center;
+ margin-top: 30px;
+  display: flex;
+  padding: 20px;
+  align-content: center;
   color: #fff;
+  width: 100%;
+  background-color: #19566e;
 }
