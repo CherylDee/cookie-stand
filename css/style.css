@@ -53,6 +53,7 @@ table {
   color: white;
   align-content: center;
   text-transform: capitalize;
+  padding-bottom: 30px;
 
 }
 table tr {
@@ -74,8 +75,8 @@ fieldset {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 4rem;
   align-items: center;
-  padding: 5px;
   border: 5px solid #109dc0;
   border-radius: 10px;
   box-shadow: -5px 5px 2px 2px rgb(6, 46, 61);
@@ -103,7 +104,7 @@ label {
 button {
   font-size: 1rem;
   background: #2c69a3;
-  width: 200px;
+  width: 180px;
   border-radius: 8px;
   color:#fff;
   padding: 10px;
