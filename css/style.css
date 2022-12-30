@@ -70,7 +70,7 @@ table td {
   border: solid 3px #fff;
 }
 fieldset {
-  font-size: 1.3rem;
+  font-size: 1rem;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ legend {
 
 input {
   background: rgb(3, 66, 85);
-  padding: 0.3rem;
+  padding: 10px;
   text-transform: capitalize;
   color: #fff;
 }
@@ -116,7 +116,9 @@ button {
 }
 
 footer {
-  margin: auto;
-  text-align: center;
+  margin: 2rem;
+  display: flex;
   padding: 15px;
+  align-content: center;
+  color: #fff;
 }
