@@ -8,7 +8,7 @@ body {
 a {
   text-decoration:none;
   color: white;
-  font-size: 3em;
+  font-size: 1.8em;
   font-weight: 250px;
   padding: 20px;
   text-shadow: 10px 5px 10px #1c243b;
@@ -84,7 +84,7 @@ fieldset {
 }
 
 legend {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 10px;
   margin-left: 2%;
   font-weight: bold;
@@ -95,7 +95,6 @@ legend {
 
 input {
   background: rgb(3, 66, 85);
-  padding: 10px;
   text-transform: capitalize;
   color: #fff;
 }
@@ -105,7 +104,7 @@ label {
 }
 
 button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 6px;
   background: #2c69a3;
   height: 30px;
@@ -116,9 +115,7 @@ button {
 }
 
 footer {
-  margin: 2rem;
-  display: flex;
-  padding: 15px;
-  align-content: center;
+  margin: 30px;
+  text-align: center;
   color: #fff;
 }
