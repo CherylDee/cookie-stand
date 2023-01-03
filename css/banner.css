@@ -79,7 +79,7 @@ main {
 }
 p {
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 #hours {
   display: flex;
@@ -88,11 +88,11 @@ p {
   text-shadow: 10px 5px 10px #132022;
 }
 #hours h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color:#00ff00;
 }
 #hours h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 50%;
   text-align: center;
   color:#00ff00; 
