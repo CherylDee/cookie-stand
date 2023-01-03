@@ -2,69 +2,70 @@
 /*===================== BANNER STYLING ============================ */
 
 body {
-  margin: 0;
-  padding: 0;
- }
- header {
-   color: white;
-   width: 100%;
-   padding: 12px;
-   align-items: center;
-   justify-content: center;
-   background: linear-gradient(-45deg, #048cfb, #c096a0, #4b93e6, #0c9fda, #5eac98, #71d1e2, #f3c683);
- }
- 
- .marquee {
-   text-transform: capitalize;
-   white-space: nowrap;
-   overflow: hidden;
-   justify-content: center;
-   align-items: center;
- }
- 
- .marquee div {
-   padding: 20px;
-   font-size: 6rem;
-   font-family:"Cookie", san-serif;
-   font-weight: 400px;
-   animation: animate 10s linear infinite;
-   padding-left: 100%;
-   display: inline-block;
-   text-shadow: 10px 5px 10px #132022;
- }
- 
- @keyframes animate {
-   100% {
-     transform: translate(-100%, 0);
-   }
- }
+margin: 0;
+padding: 0;
+}
+header {
+  color: white;
+  width: 100%;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #048cfb, #c096a0, #4b93e6, #0c9fda, #5eac98, #71d1e2, #f3c683);
+}
+
+.marquee {
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee div {
+  padding: 20px;
+  font-size: 6rem;
+  font-family:"Cookie", san-serif;
+  font-weight: 400px;
+  animation: animate 10s linear infinite;
+  padding-left: 100%;
+  display: inline-block;
+  text-shadow: 10px 5px 10px #132022;
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
  
  /*======================= MAIN BODY AND IMAGES STYLING ==================== */
 
 main {
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Andika';
-    line-height: 2.8vw;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Andika';
+  line-height: 2.7vw;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #salmon {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 #welcomeMsg {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2.3rem;
 }
 #family {
   display: flex;
@@ -77,8 +78,8 @@ main {
   border-radius: 50%;
 }
 p {
-    margin: 1rem;
-    font-size: 1.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
 }
 #hours {
   display: flex;
@@ -87,7 +88,6 @@ p {
   text-shadow: 10px 5px 10px #132022;
 }
 #hours h2 {
-  margin-top: 30px;
   font-size: 2.5rem;
   color:#00ff00;
 }
@@ -96,62 +96,65 @@ p {
   width: 50%;
   text-align: center;
   color:#00ff00; 
+  padding-bottom: 30px;
+  line-height: 2.5rem;
 }
 
 /* ============= IMAGES WITH LOCATION ============ */
 
 .location {
-    width: 80%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid #f16006;
-    border-radius: 20px;
-    margin:auto;
-    background-color:#5eac98;
-    margin-top: 20px;
+  position: relative;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 4px solid #f16006;
+  border-radius: 20px;
+  margin:auto;
+  background-color:#5eac98;
+  margin-top: 20px;
 }
 .location img {
   margin: 2rem;
-  border: 3px solid #f16006;
+  border: 0.22rem solid #f16006;
   border-radius: 50%;
   display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ 
 }
 .location h3 {
-  width: auto;
+  width: 35%;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .location h2 {
-    font-size: 1.6rem;
-    width: auto;
-}
-
-.address h3 {
-    text-align: center;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
+  font-size: 2.1rem;
+  width: max-content;
+  line-height: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #info {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #contact h3 {
-    text-align: center;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
 }
 footer {
   margin-top: 30px;
