@@ -88,7 +88,7 @@ p {
   text-shadow: 10px 5px 10px #132022;
 }
 #hours h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color:#00ff00;
 }
 #hours h3 {
@@ -97,7 +97,7 @@ p {
   text-align: center;
   color:#00ff00; 
   padding-bottom: 30px;
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 /* ============= IMAGES WITH LOCATION ============ */
@@ -129,13 +129,13 @@ p {
 .location h3 {
   width: 35%;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 .location h2 {
   font-size: 2.1rem;
   width: max-content;
-  line-height: 2.5rem;
+  line-height: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -153,7 +153,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2.3rem;
 }
 footer {
