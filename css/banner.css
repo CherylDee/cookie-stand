@@ -79,7 +79,7 @@ main {
 }
 p {
   margin: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 #hours {
   display: flex;
@@ -88,16 +88,16 @@ p {
   text-shadow: 10px 5px 10px #132022;
 }
 #hours h2 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color:#00ff00;
 }
 #hours h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: 50%;
   text-align: center;
   color:#00ff00; 
   padding-bottom: 30px;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 /* ============= IMAGES WITH LOCATION ============ */
@@ -108,6 +108,7 @@ p {
   text-align: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   border: 4px solid #f16006;
@@ -116,28 +117,33 @@ p {
   background-color:#5eac98;
   margin-top: 20px;
 }
+
 .location img {
-  margin: 2rem;
+  margin: 1rem;
   border: 0.22rem solid #f16006;
   border-radius: 50%;
   display: flex; 
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction:row;
   align-items: center;
  
 }
 .location h3 {
-  width: 35%;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .location h2 {
-  font-size: 1.5rem;
-  width: max-content;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -154,7 +160,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2.3rem;
 }
 footer {
