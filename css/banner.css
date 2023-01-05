@@ -48,16 +48,20 @@ main {
   justify-content: center;
   font-family: 'Andika';
   line-height: 2.7vw;
+  flex-wrap: wrap;
+  
 }
 
 #content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #salmon {
   margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 #welcomeMsg {
@@ -71,6 +75,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 #family img {
   margin: 2rem;
