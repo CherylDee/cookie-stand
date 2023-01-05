@@ -140,7 +140,7 @@ p {
 }
 .location h2 {
   font-size: 2rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
