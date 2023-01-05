@@ -131,7 +131,7 @@ p {
   display: flex;
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
